@@ -1,0 +1,11 @@
+{
+  "firebase": {
+    "projectId": "test-cloud-function-b16c7",
+    "storageBucket": "test-cloud-function-b16c7.appspot.com",
+    "locationId": "us-central"
+  },
+  "gmail": {
+    "password": "cufknlmagpcklimj",
+    "email": "brandonta1035@gmail.com"
+  }
+}
