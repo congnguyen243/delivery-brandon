@@ -37,7 +37,7 @@ const send_notify = functions.https.onRequest((req, res) => {
     }
 
     try {
-        let data = req.body.transaction,
+        let data = JSON.parse(req.body.transaction),
             the_email_admin = req.body.email_admin,
             the_email = req.body.email_sender,
             req_id = req.body.request_id;
@@ -56,7 +56,7 @@ const send_notify = functions.https.onRequest((req, res) => {
                 status: null,
                 error: null,
             };
-        return res.status(123).send(data.sender);
+
 
         let mail_options = template_mail_options.template_mail_options(user, the_email, the_intro, data)
         let mail_options_admin = template_mail_options_admin.template_mail_options_admin(user, the_email_admin, the_intro_admin, data, controller)
