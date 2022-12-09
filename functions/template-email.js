@@ -1,9 +1,6 @@
 const template_send_code = (user, the_email, the_name, the_code) => {
     const mailOptions = {
-        from: user,
-        to: the_email,
-        subject: `Authorization Request for ${the_name}`,
-        html: `
+        from: user, to: the_email, subject: `Authorization Request for ${the_name}`, html: `
                     <h1>Hi ${the_name}</h1>
                     <p>Please use the following code to continue your login process.</p>
                     <h2>${the_code}</h2>
@@ -15,13 +12,10 @@ const template_send_code = (user, the_email, the_name, the_code) => {
 }
 
 
-const template_mail_options = (user = null, the_email = null, the_intro = null, data = null) => {
+const template_mail_options = (user = null, the_email = null, the_intro = 'The system has a new transaction', data = null) => {
 
-    const mail_options = {
-        from: user,
-        to: the_email,
-        subject: `Delivery & Pickup - The system has a new transaction ${the_intro}`,
-        html: `
+    return {
+        from: user, to: the_email, subject: `Delivery & Pickup - ${the_intro}`, html: `
                 <p>${the_intro}</p>
                 <h1 style="margin-bottom: 0">Sender</h1>
                 <b>Fullname: </b>
@@ -70,17 +64,12 @@ const template_mail_options = (user = null, the_email = null, the_intro = null, 
                 <p>Anh Mai Logistic</p>                
             `
     };
-
-    return mail_options;
 }
 
 
-const template_mail_options_admin = (user = null, the_email_admin = null, the_intro_admin = null, data = null, controller = null) => {
-    const mail_options_admin = {
-        from: user,
-        to: the_email_admin,
-        subject: `Delivery & Pickup - The system has a new transaction ${the_intro_admin}`,
-        html: `
+const template_mail_options_admin = (user = null, the_email_admin = null, the_intro_admin = 'The system has a new transaction', data = null, controller = null) => {
+    return {
+        from: user, to: the_email_admin, subject: `Delivery & Pickup - ${the_intro_admin}`, html: `
                 <p>${the_intro_admin}</p>
                 <h1 style="margin-bottom: 0">Sender</h1>
                 <b>Fullname: </b>
@@ -130,8 +119,6 @@ const template_mail_options_admin = (user = null, the_email_admin = null, the_in
                 <p>Anh Mai Logistic</p>                
             `
     };
-
-    return mail_options_admin;
 }
 
 
