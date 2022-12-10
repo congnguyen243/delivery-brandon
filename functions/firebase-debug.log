@@ -1,0 +1,246 @@
+[debug] [2022-12-10T07:08:17.171Z] ----------------------------------------------------------------------
+[debug] [2022-12-10T07:08:17.174Z] Command:       /usr/local/bin/firebase /home/ciong24/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase emulators:start --only functions
+[debug] [2022-12-10T07:08:17.174Z] CLI Version:   11.16.0
+[debug] [2022-12-10T07:08:17.175Z] Platform:      linux
+[debug] [2022-12-10T07:08:17.175Z] Node Version:  v16.16.0
+[debug] [2022-12-10T07:08:17.176Z] Time:          Sat Dec 10 2022 14:08:17 GMT+0700 (Indochina Time)
+[debug] [2022-12-10T07:08:17.176Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-10T07:08:17.303Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-10T07:08:17.303Z] > authorizing via signed-in user (nguyenchi.dev@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-12-10T07:08:17.312Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-10T07:08:17.313Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-12-10T07:08:17.325Z] [hub] writing locator at /tmp/hub-test-cloud-function-b16c7.json
+[debug] [2022-12-10T07:08:17.356Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-10T07:08:17.357Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-12-10T07:08:17.357Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-12-10T07:08:17.396Z] defaultcredentials: writing to file /home/ciong24/.config/firebase/nguyenchi_dev_gmail.com_application_default_credentials.json
+[debug] [2022-12-10T07:08:17.404Z] Setting GAC to /home/ciong24/.config/firebase/nguyenchi_dev_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/ciong24/.config/firebase/nguyenchi_dev_gmail.com_application_default_credentials.json"}}
+[debug] [2022-12-10T07:08:17.406Z] > refreshing access token with scopes: []
+[debug] [2022-12-10T07:08:17.410Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-12-10T07:08:17.410Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-10T07:08:17.636Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-12-10T07:08:17.636Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-12-10T07:08:17.652Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/test-cloud-function-b16c7/adminSdkConfig [none]
+[debug] [2022-12-10T07:08:18.250Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/test-cloud-function-b16c7/adminSdkConfig 200
+[debug] [2022-12-10T07:08:18.251Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/test-cloud-function-b16c7/adminSdkConfig {"projectId":"test-cloud-function-b16c7","storageBucket":"test-cloud-function-b16c7.appspot.com","locationId":"us-central"}
+[debug] [2022-12-10T07:08:18.291Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-12-10T07:08:18.292Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-12-10T07:08:18.292Z] Starting Emulator UI with command {"binary":"node","args":["/home/ciong24/.cache/firebase/emulators/ui-v1.11.1/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/ciong24/.cache/firebase/emulators/ui-v1.11.1/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-12-10T07:08:18.637Z] Web / API server started at 127.0.0.1:4000
+Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\nWeb / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/home/ciong24/Workspace/brandon/function-source/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/ciong24/Workspace/brandon/function-source/functions\" for Cloud Functions..."}}
+[debug] [2022-12-10T07:08:18.829Z] Validating nodejs source
+[debug] [2022-12-10T07:08:21.724Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.1.0",
+    "nodemailer": "^6.8.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-10T07:08:21.726Z] Building nodejs source
+[debug] [2022-12-10T07:08:21.726Z] Analyzing nodejs backend spec
+[debug] [2022-12-10T07:08:21.733Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-10T07:08:23.350Z] Serving at port 9005
+
+[debug] [2022-12-10T07:08:23.975Z] Got response from /__/functions.yaml {"endpoints":{"sendCodeVerifyEmail":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"sendCodeVerifyEmail"},"sender":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"sender"},"admin":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"admin"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-10T07:08:24.000Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: sendCodeVerifyEmail, sender, admin. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: sendCodeVerifyEmail, sender, admin."}}
+[info] ✔  functions[us-central1-sendCodeVerifyEmail]: http function initialized (http://127.0.0.1:5001/test-cloud-function-b16c7/us-central1/sendCodeVerifyEmail). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/test-cloud-function-b16c7/us-central1/sendCodeVerifyEmail)."}}
+[info] ✔  functions[us-central1-sender]: http function initialized (http://127.0.0.1:5001/test-cloud-function-b16c7/us-central1/sender). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/test-cloud-function-b16c7/us-central1/sender)."}}
+[info] ✔  functions[us-central1-admin]: http function initialized (http://127.0.0.1:5001/test-cloud-function-b16c7/us-central1/admin). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/test-cloud-function-b16c7/us-central1/admin)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-12-10T07:08:51.401Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-10T07:08:51.403Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-10T07:08:51.404Z] Accepted request POST /test-cloud-function-b16c7/us-central1/admin --> us-central1-admin
+[debug] [2022-12-10T07:08:51.410Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-10T07:08:51.411Z] [functions] Got req.url=/test-cloud-function-b16c7/us-central1/admin, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/test-cloud-function-b16c7/us-central1/admin, mapping to path=/"}}
+[debug] [2022-12-10T07:08:51.433Z] [worker-pool] addWorker(us-central1-admin) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-admin)"}}
+[debug] [2022-12-10T07:08:51.434Z] [worker-pool] Adding worker with key us-central1-admin, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-admin, total=1"}}
+[debug] [2022-12-10T07:08:52.764Z] [runtime-status] [85996] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"[runtime-status] [85996] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-10T07:08:52.765Z] [runtime-status] [85996] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.0","resolution":"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"[runtime-status] [85996] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.1.0\",\"resolution\":\"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-12-10T07:08:52.766Z] [runtime-status] [85996] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"[runtime-status] [85996] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-12-10T07:08:52.769Z] [runtime-status] [85996] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.0","resolution":"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"[runtime-status] [85996] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.1.0\",\"resolution\":\"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-12-10T07:08:52.969Z] [runtime-status] [85996] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"[runtime-status] [85996] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-12-10T07:08:52.969Z] [runtime-status] [85996] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.1.0","resolution":"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"[runtime-status] [85996] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.1.0\",\"resolution\":\"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2022-12-10T07:08:52.973Z] [runtime-status] [85996] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.0","resolution":"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"[runtime-status] [85996] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.1.0\",\"resolution\":\"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-12-10T07:08:52.975Z] [runtime-status] [85996] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"[runtime-status] [85996] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-10T07:08:52.992Z] [runtime-status] [85996] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.0","resolution":"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"[runtime-status] [85996] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.1.0\",\"resolution\":\"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-12-10T07:08:52.993Z] [runtime-status] [85996] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"[runtime-status] [85996] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-12-10T07:08:53.024Z] [runtime-status] [85996] initializeApp(DEFAULT) {"storageBucket":"test-cloud-function-b16c7.appspot.com","projectId":"test-cloud-function-b16c7"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"[runtime-status] [85996] initializeApp(DEFAULT) {\"storageBucket\":\"test-cloud-function-b16c7.appspot.com\",\"projectId\":\"test-cloud-function-b16c7\"}"}}
+[warn] ⚠  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[debug] [2022-12-10T07:08:53.047Z] [runtime-status] [85996] Functions runtime initialized. {"cwd":"/home/ciong24/Workspace/brandon/function-source/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"[runtime-status] [85996] Functions runtime initialized. {\"cwd\":\"/home/ciong24/Workspace/brandon/function-source/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2022-12-10T07:08:53.048Z] [runtime-status] [85996] Listening to port: /tmp/fire_emu_03339020f4d28917.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"[runtime-status] [85996] Listening to port: /tmp/fire_emu_03339020f4d28917.sock"}}
+[debug] [2022-12-10T07:08:53.074Z] [worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: IDLE"}}
+[debug] [2022-12-10T07:08:53.075Z] [worker-pool] submitRequest(triggerId=us-central1-admin) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-admin)"}}
+[debug] [2022-12-10T07:08:53.075Z] [worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: BUSY"}}
+[info] i  functions: Beginning execution of "admin" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"Beginning execution of \"admin\""}}
+[debug] [2022-12-10T07:08:53.106Z] [worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: IDLE"}}
+[debug] [2022-12-10T07:08:53.107Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "admin" in 11.885681ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"Finished \"admin\" in 11.885681ms"}}
+[info] >  {"accepted":["nguyenchi.dev@gmail.com"],"rejected":[],"envelopeTime":714,"messageTime":819,"messageSize":3138,"response":"250 2.0.0 OK  1670656134 k5-20020a170902c40500b001766a3b2a26sm2343854plk.105 - gsmtp","envelope":{"from":"brandonta1035@gmail.com","to":["nguyenchi.dev@gmail.com"]},"messageId":"<9e15e499-1ee6-ac73-4ed5-a06b28821ae9@gmail.com>","severity":"INFO","message":"sent email"} {"user":{"accepted":["nguyenchi.dev@gmail.com"],"rejected":[],"envelopeTime":714,"messageTime":819,"messageSize":3138,"response":"250 2.0.0 OK  1670656134 k5-20020a170902c40500b001766a3b2a26sm2343854plk.105 - gsmtp","envelope":{"from":"brandonta1035@gmail.com","to":["nguyenchi.dev@gmail.com"]},"messageId":"<9e15e499-1ee6-ac73-4ed5-a06b28821ae9@gmail.com>","severity":"INFO","message":"sent email"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"accepted\":[\"nguyenchi.dev@gmail.com\"],\"rejected\":[],\"envelopeTime\":714,\"messageTime\":819,\"messageSize\":3138,\"response\":\"250 2.0.0 OK  1670656134 k5-20020a170902c40500b001766a3b2a26sm2343854plk.105 - gsmtp\",\"envelope\":{\"from\":\"brandonta1035@gmail.com\",\"to\":[\"nguyenchi.dev@gmail.com\"]},\"messageId\":\"<9e15e499-1ee6-ac73-4ed5-a06b28821ae9@gmail.com>\",\"severity\":\"INFO\",\"message\":\"sent email\"}"}}
+[debug] [2022-12-10T07:09:28.199Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-10T07:09:28.199Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-10T07:09:28.199Z] Accepted request POST /test-cloud-function-b16c7/us-central1/admin --> us-central1-admin
+[debug] [2022-12-10T07:09:28.205Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-10T07:09:28.206Z] [functions] Got req.url=/test-cloud-function-b16c7/us-central1/admin, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/test-cloud-function-b16c7/us-central1/admin, mapping to path=/"}}
+[debug] [2022-12-10T07:09:28.206Z] [worker-pool] submitRequest(triggerId=us-central1-admin) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-admin)"}}
+[debug] [2022-12-10T07:09:28.206Z] [worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: BUSY"}}
+[info] i  functions: Beginning execution of "admin" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"Beginning execution of \"admin\""}}
+[debug] [2022-12-10T07:09:28.218Z] [worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: IDLE"}}
+[debug] [2022-12-10T07:09:28.218Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "admin" in 3.252022ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"Finished \"admin\" in 3.252022ms"}}
+[info] >  {"accepted":["nguyenchi.dev@gmail.com"],"rejected":[],"envelopeTime":817,"messageTime":818,"messageSize":3138,"response":"250 2.0.0 OK  1670656170 q19-20020a170902f35300b001893efd3e03sm2335293ple.119 - gsmtp","envelope":{"from":"brandonta1035@gmail.com","to":["nguyenchi.dev@gmail.com"]},"messageId":"<7d29eb37-dac6-94f1-0627-bf88c91ab9e3@gmail.com>","severity":"INFO","message":"sent email"} {"user":{"accepted":["nguyenchi.dev@gmail.com"],"rejected":[],"envelopeTime":817,"messageTime":818,"messageSize":3138,"response":"250 2.0.0 OK  1670656170 q19-20020a170902f35300b001893efd3e03sm2335293ple.119 - gsmtp","envelope":{"from":"brandonta1035@gmail.com","to":["nguyenchi.dev@gmail.com"]},"messageId":"<7d29eb37-dac6-94f1-0627-bf88c91ab9e3@gmail.com>","severity":"INFO","message":"sent email"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"accepted\":[\"nguyenchi.dev@gmail.com\"],\"rejected\":[],\"envelopeTime\":817,\"messageTime\":818,\"messageSize\":3138,\"response\":\"250 2.0.0 OK  1670656170 q19-20020a170902f35300b001893efd3e03sm2335293ple.119 - gsmtp\",\"envelope\":{\"from\":\"brandonta1035@gmail.com\",\"to\":[\"nguyenchi.dev@gmail.com\"]},\"messageId\":\"<7d29eb37-dac6-94f1-0627-bf88c91ab9e3@gmail.com>\",\"severity\":\"INFO\",\"message\":\"sent email\"}"}}
+[debug] [2022-12-10T07:10:05.921Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-10T07:10:05.922Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-10T07:10:05.922Z] Accepted request POST /test-cloud-function-b16c7/us-central1/admin --> us-central1-admin
+[debug] [2022-12-10T07:10:05.931Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-10T07:10:05.932Z] [functions] Got req.url=/test-cloud-function-b16c7/us-central1/admin, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/test-cloud-function-b16c7/us-central1/admin, mapping to path=/"}}
+[debug] [2022-12-10T07:10:05.933Z] [worker-pool] submitRequest(triggerId=us-central1-admin) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-admin)"}}
+[debug] [2022-12-10T07:10:05.934Z] [worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: BUSY"}}
+[info] i  functions: Beginning execution of "admin" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"Beginning execution of \"admin\""}}
+[debug] [2022-12-10T07:10:05.945Z] [worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: IDLE"}}
+[debug] [2022-12-10T07:10:05.946Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "admin" in 3.7073ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"Finished \"admin\" in 3.7073ms"}}
+[info] >  {"accepted":["nguyenchi.dev@gmail.com"],"rejected":[],"envelopeTime":669,"messageTime":722,"messageSize":3138,"response":"250 2.0.0 OK  1670656206 d6-20020a170902654600b00186b8752a78sm2340257pln.80 - gsmtp","envelope":{"from":"brandonta1035@gmail.com","to":["nguyenchi.dev@gmail.com"]},"messageId":"<e7bfe940-adc7-433b-5b68-beda57e24c11@gmail.com>","severity":"INFO","message":"sent email"} {"user":{"accepted":["nguyenchi.dev@gmail.com"],"rejected":[],"envelopeTime":669,"messageTime":722,"messageSize":3138,"response":"250 2.0.0 OK  1670656206 d6-20020a170902654600b00186b8752a78sm2340257pln.80 - gsmtp","envelope":{"from":"brandonta1035@gmail.com","to":["nguyenchi.dev@gmail.com"]},"messageId":"<e7bfe940-adc7-433b-5b68-beda57e24c11@gmail.com>","severity":"INFO","message":"sent email"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-admin"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"accepted\":[\"nguyenchi.dev@gmail.com\"],\"rejected\":[],\"envelopeTime\":669,\"messageTime\":722,\"messageSize\":3138,\"response\":\"250 2.0.0 OK  1670656206 d6-20020a170902654600b00186b8752a78sm2340257pln.80 - gsmtp\",\"envelope\":{\"from\":\"brandonta1035@gmail.com\",\"to\":[\"nguyenchi.dev@gmail.com\"]},\"messageId\":\"<e7bfe940-adc7-433b-5b68-beda57e24c11@gmail.com>\",\"severity\":\"INFO\",\"message\":\"sent email\"}"}}
+[debug] [2022-12-10T07:12:32.624Z] File /home/ciong24/Workspace/brandon/function-source/functions/sender.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/ciong24/Workspace/brandon/function-source/functions/sender.js changed, reloading triggers"}}
+[debug] [2022-12-10T07:12:33.627Z] Validating nodejs source
+[debug] [2022-12-10T07:12:38.973Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^4.1.0",
+    "nodemailer": "^6.8.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-12-10T07:12:38.974Z] Building nodejs source
+[debug] [2022-12-10T07:12:38.974Z] Analyzing nodejs backend spec
+[debug] [2022-12-10T07:12:38.975Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-12-10T07:12:39.610Z] Serving at port 9005
+
+[debug] [2022-12-10T07:12:39.887Z] Got response from /__/functions.yaml {"endpoints":{"sendCodeVerifyEmail":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"sendCodeVerifyEmail"},"sender":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"sender"},"admin":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"admin"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-12-10T07:12:39.894Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: sendCodeVerifyEmail, sender, admin. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: sendCodeVerifyEmail, sender, admin."}}
+[debug] [2022-12-10T07:12:39.925Z] [worker-pool] Shutting down IDLE worker (us-central1-admin) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-admin)"}}
+[debug] [2022-12-10T07:12:39.926Z] [worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: FINISHING"}}
+[debug] [2022-12-10T07:12:39.944Z] [worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: exited"}}
+[debug] [2022-12-10T07:12:39.945Z] [worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-admin-719dbf3e-46b9-4f8e-ae96-fd887e80b80b]: FINISHED"}}
+[debug] [2022-12-10T07:12:42.725Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-10T07:12:42.726Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-10T07:12:42.727Z] Accepted request OPTIONS /test-cloud-function-b16c7/us-central1/sender --> us-central1-sender
+[debug] [2022-12-10T07:12:42.732Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-10T07:12:42.733Z] [functions] Got req.url=/test-cloud-function-b16c7/us-central1/sender, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/test-cloud-function-b16c7/us-central1/sender, mapping to path=/"}}
+[debug] [2022-12-10T07:12:42.733Z] [worker-pool] Cleaned up workers for us-central1-admin: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-admin: 1 --> 0"}}
+[debug] [2022-12-10T07:12:42.751Z] [worker-pool] addWorker(us-central1-sender) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-sender)"}}
+[debug] [2022-12-10T07:12:42.752Z] [worker-pool] Adding worker with key us-central1-sender, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-sender, total=1"}}
+[debug] [2022-12-10T07:12:44.144Z] [runtime-status] [86319] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"[runtime-status] [86319] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-10T07:12:44.147Z] [runtime-status] [86319] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.0","resolution":"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"[runtime-status] [86319] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.1.0\",\"resolution\":\"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-12-10T07:12:44.147Z] [runtime-status] [86319] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"[runtime-status] [86319] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-12-10T07:12:44.150Z] [runtime-status] [86319] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.0","resolution":"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"[runtime-status] [86319] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.1.0\",\"resolution\":\"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-12-10T07:12:44.384Z] [runtime-status] [86319] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"[runtime-status] [86319] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-12-10T07:12:44.385Z] [runtime-status] [86319] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.1.0","resolution":"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"[runtime-status] [86319] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.1.0\",\"resolution\":\"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js\"}}"}}
+[debug] [2022-12-10T07:12:44.386Z] [runtime-status] [86319] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.0","resolution":"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"[runtime-status] [86319] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.1.0\",\"resolution\":\"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-12-10T07:12:44.388Z] [runtime-status] [86319] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"[runtime-status] [86319] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-12-10T07:12:44.391Z] [runtime-status] [86319] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.1.0","resolution":"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"[runtime-status] [86319] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.1.0\",\"resolution\":\"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-functions/lib/v1/index.js\"}"}}
+[debug] [2022-12-10T07:12:44.391Z] [runtime-status] [86319] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"[runtime-status] [86319] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/ciong24/Workspace/brandon/function-source/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-12-10T07:12:44.422Z] [runtime-status] [86319] initializeApp(DEFAULT) {"storageBucket":"test-cloud-function-b16c7.appspot.com","projectId":"test-cloud-function-b16c7"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"[runtime-status] [86319] initializeApp(DEFAULT) {\"storageBucket\":\"test-cloud-function-b16c7.appspot.com\",\"projectId\":\"test-cloud-function-b16c7\"}"}}
+[debug] [2022-12-10T07:12:44.439Z] [runtime-status] [86319] Functions runtime initialized. {"cwd":"/home/ciong24/Workspace/brandon/function-source/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"[runtime-status] [86319] Functions runtime initialized. {\"cwd\":\"/home/ciong24/Workspace/brandon/function-source/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2022-12-10T07:12:44.439Z] [runtime-status] [86319] Listening to port: /tmp/fire_emu_df6512233557ab98.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"[runtime-status] [86319] Listening to port: /tmp/fire_emu_df6512233557ab98.sock"}}
+[debug] [2022-12-10T07:12:44.484Z] [worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: IDLE"}}
+[debug] [2022-12-10T07:12:44.485Z] [worker-pool] submitRequest(triggerId=us-central1-sender) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-sender)"}}
+[debug] [2022-12-10T07:12:44.485Z] [worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: BUSY"}}
+[info] i  functions: Beginning execution of "sender" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"Beginning execution of \"sender\""}}
+[debug] [2022-12-10T07:12:44.494Z] [worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: IDLE"}}
+[debug] [2022-12-10T07:12:44.495Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "sender" in 2.430393ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"Finished \"sender\" in 2.430393ms"}}
+[debug] [2022-12-10T07:12:44.502Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-10T07:12:44.502Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-10T07:12:44.503Z] Accepted request POST /test-cloud-function-b16c7/us-central1/sender --> us-central1-sender
+[debug] [2022-12-10T07:12:44.509Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-10T07:12:44.510Z] [functions] Got req.url=/test-cloud-function-b16c7/us-central1/sender, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/test-cloud-function-b16c7/us-central1/sender, mapping to path=/"}}
+[debug] [2022-12-10T07:12:44.510Z] [worker-pool] submitRequest(triggerId=us-central1-sender) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-sender)"}}
+[debug] [2022-12-10T07:12:44.511Z] [worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: BUSY"}}
+[info] i  functions: Beginning execution of "sender" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"Beginning execution of \"sender\""}}
+[debug] [2022-12-10T07:12:44.544Z] [worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: IDLE"}}
+[debug] [2022-12-10T07:12:44.545Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "sender" in 4.31187ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"Finished \"sender\" in 4.31187ms"}}
+[debug] [2022-12-10T07:15:04.633Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-10T07:15:04.633Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-10T07:15:04.634Z] Accepted request OPTIONS /test-cloud-function-b16c7/us-central1/sender --> us-central1-sender
+[debug] [2022-12-10T07:15:04.640Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-10T07:15:04.640Z] [functions] Got req.url=/test-cloud-function-b16c7/us-central1/sender, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/test-cloud-function-b16c7/us-central1/sender, mapping to path=/"}}
+[debug] [2022-12-10T07:15:04.641Z] [worker-pool] submitRequest(triggerId=us-central1-sender) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-sender)"}}
+[debug] [2022-12-10T07:15:04.641Z] [worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: BUSY"}}
+[info] i  functions: Beginning execution of "sender" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"Beginning execution of \"sender\""}}
+[info] i  functions: Finished "sender" in 1.328227ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"Finished \"sender\" in 1.328227ms"}}
+[debug] [2022-12-10T07:15:04.653Z] [worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: IDLE"}}
+[debug] [2022-12-10T07:15:04.654Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-12-10T07:15:04.660Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-12-10T07:15:04.661Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-12-10T07:15:04.661Z] Accepted request POST /test-cloud-function-b16c7/us-central1/sender --> us-central1-sender
+[debug] [2022-12-10T07:15:04.668Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-12-10T07:15:04.669Z] [functions] Got req.url=/test-cloud-function-b16c7/us-central1/sender, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/test-cloud-function-b16c7/us-central1/sender, mapping to path=/"}}
+[debug] [2022-12-10T07:15:04.669Z] [worker-pool] submitRequest(triggerId=us-central1-sender) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-sender)"}}
+[debug] [2022-12-10T07:15:04.670Z] [worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: BUSY"}}
+[info] i  functions: Beginning execution of "sender" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"Beginning execution of \"sender\""}}
+[debug] [2022-12-10T07:15:04.694Z] [worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-sender-237b6f3b-3f86-494b-a243-0b3b99a38b18]: IDLE"}}
+[debug] [2022-12-10T07:15:04.694Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "sender" in 11.757262ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"Finished \"sender\" in 11.757262ms"}}
+[info] >  {"accepted":["nguyenchi.dev@gmail.com"],"rejected":[],"envelopeTime":664,"messageTime":875,"messageSize":2238,"response":"250 2.0.0 OK  1670656507 x9-20020a655389000000b00470275c8d6dsm1836352pgq.10 - gsmtp","envelope":{"from":"brandonta1035@gmail.com","to":["nguyenchi.dev@gmail.com"]},"messageId":"<cd1d2f2a-fe91-bff9-a503-ab23dcc60a75@gmail.com>","severity":"INFO","message":"sent sender's email"} {"user":{"accepted":["nguyenchi.dev@gmail.com"],"rejected":[],"envelopeTime":664,"messageTime":875,"messageSize":2238,"response":"250 2.0.0 OK  1670656507 x9-20020a655389000000b00470275c8d6dsm1836352pgq.10 - gsmtp","envelope":{"from":"brandonta1035@gmail.com","to":["nguyenchi.dev@gmail.com"]},"messageId":"<cd1d2f2a-fe91-bff9-a503-ab23dcc60a75@gmail.com>","severity":"INFO","message":"sent sender's email"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-sender"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"accepted\":[\"nguyenchi.dev@gmail.com\"],\"rejected\":[],\"envelopeTime\":664,\"messageTime\":875,\"messageSize\":2238,\"response\":\"250 2.0.0 OK  1670656507 x9-20020a655389000000b00470275c8d6dsm1836352pgq.10 - gsmtp\",\"envelope\":{\"from\":\"brandonta1035@gmail.com\",\"to\":[\"nguyenchi.dev@gmail.com\"]},\"messageId\":\"<cd1d2f2a-fe91-bff9-a503-ab23dcc60a75@gmail.com>\",\"severity\":\"INFO\",\"message\":\"sent sender's email\"}"}}

@@ -47,7 +47,7 @@ const admin = require('./admin.js')
 /**
  * @description: Admin function for send notify email to admin
  * payload : {
- *     "email_sender" : "nguyenchi.dev@gmail.com",
+ *     "email_admin" : "nguyenchi.dev@gmail.com",
  *     "request_id" : "F3mj234f332",
  *     "transaction": {
  *         "package": {
