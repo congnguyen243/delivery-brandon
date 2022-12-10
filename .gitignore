@@ -1,2 +1,6 @@
 node_modules/
-.idea
+.idea.idea
+/.idea/function-source.iml
+/.idea/git_toolbox_prj.xml
+/.idea/modules.xml
+/.idea/vcs.xml
