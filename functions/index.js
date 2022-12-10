@@ -84,3 +84,5 @@ const admin = require('./admin.js')
  */
 exports.admin = admin.sendNotify
 
+const actionConfirm = require("./actionConfirm.js");
+exports.actionConfirm = actionConfirm.actionConfirm;

@@ -1,9 +1,9 @@
+require('dotenv').config();
 const nodemailer = require('nodemailer');
 const functions = require('firebase-functions');
 const cors = require('cors')({origin: true});
-const user = 'brandonta1035@gmail.com',
-    pass = 'cufknlmagpcklimj';
-
+const user = process.env.ADMIN_EMAIL,
+      pass = process.env.ADMIN_PASS;
 
 //google account credentials used to send email
 const transporter = nodemailer.createTransport({
