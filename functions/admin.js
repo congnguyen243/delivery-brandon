@@ -41,8 +41,8 @@ const send = functions.https.onRequest((request, response) => {
 
                     try {
                         let the_intro_admin = 'The system has a new transaction.',
-                            the_confirmed_url = `http://127.0.0.1:5002/test-cloud-function-b16c7/us-central1/actionConfirm/?request_id=${request_id}&request=confirmed&email=${email_sender}`,
-                            the_rejected_url = `http://127.0.0.1:5002/test-cloud-function-b16c7/us-central1/actionConfirm/?request_id=${request_id}&request=confirmed&email=${email_sender}`,
+                            the_confirmed_url = `https://us-central1-test-cloud-function-b16c7.cloudfunctions.net/actionConfirm/?request_id=${request_id}&request=confirmed&email=${email_sender}`,
+                            the_rejected_url = `https://us-central1-test-cloud-function-b16c7.cloudfunctions.net/actionConfirm/?request_id=${request_id}&request=confirmed&email=${email_sender}`,
                             the_controller = `'
                             <h5>Let confirm the request.</h5>
                             <a href="${the_confirmed_url}" style="text-decoration: none;    font-style: initial;    padding: 10px 40px;    border: none;    background-color: #85A76F;    color: #ffffff;    font-weight: 400;">Confirm</a>
