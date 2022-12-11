@@ -17,9 +17,16 @@ const transporter = nodemailer.createTransport({
 });
 
 const template_mail = require('./template-email.js');
+const { authenticateApi } = require('./authentication.js');
 
-const send = functions.https.onRequest((request, response) => {
-    cors(request, response, () => {
+const send = functions.https.onRequest(async (request, response) => {
+    cors(request, response, async () => {
+        // API Key Authentication
+        let key = request.headers['x-api-key'] || '';
+        let auth = await authenticateApi(key)
+        if (!auth) {
+            return response.status(401).send('Unauthorized');
+        }
         switch (request.method) {
             case 'POST':
                 response.setHeader('Content-Type', 'application/json');
