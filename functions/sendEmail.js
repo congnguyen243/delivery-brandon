@@ -17,6 +17,7 @@ const transporter = nodemailer.createTransport({
 });
 
 const template_send_code = require('./template-email');
+const { authenticateApi } = require('./authentication');
 
 /*
  * @desc: to return the the time for next {min} minutes
@@ -52,6 +53,12 @@ const sendCodeVerifyEmail = functions.https.onRequest(async (req, res) => {
       exp_time = get_expiration_time(),
       code = the_code.code,
       id = the_code.the_id;
+    // API Key Authentication
+    let key = req.headers['x-api-key'] ||'';
+    let auth = await authenticateApi(key)
+    if (!auth) {
+      return res.status(401).send('Unauthorized');
+    }
     let res_email = {
       data: {
         code: null,
