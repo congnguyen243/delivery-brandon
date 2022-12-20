@@ -34,8 +34,10 @@ const actionConfirm = functions.https.onRequest(async (req, res) => {
         ) {
             res.status(400).send('Invalid request');
         } else {
-            const cl_delivery_info = db.collection('delivery-info');
-            let res_cl = cl_delivery_info.doc(the_request_id);
+            const cl_delivery_info = db.collection('delivery-info'),
+                users = db.collection('users');
+            let res_cl = cl_delivery_info.doc(the_request_id),
+                id_user = '';
             res_cl
                 .get()
                 .then((doc) => {
@@ -66,7 +68,25 @@ const actionConfirm = functions.https.onRequest(async (req, res) => {
                                     data: data,
                                 });
                             });
-
+                            // Get User's device tokens and send notifications.
+                            id_user = doc.data().id_user;
+                            const user_info = users.doc(id_user);
+                            user_info.get().then(doc => {
+                                if (doc.exists) {
+                                    const device_tokens = doc.data().device_tokens;
+                                    const payload = {
+                                        notification: {
+                                            title: 'Delivery Request',
+                                            body: `Your request #${the_request_id} has been confirmed`,
+                                        },
+                                    };
+                                    admin.messaging().sendToDevice(device_tokens, payload).then(response => {
+                                        functions.logger.info('Successfully sent message:', response);
+                                    });
+                                } else {
+                                    functions.logger.info('No such document!');
+                                }
+                            })
                             res.status(200).send(`You has been ${the_request} request #${the_request_id} successful`);
                         }
                     } else {

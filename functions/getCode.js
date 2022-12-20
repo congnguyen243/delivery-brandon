@@ -1,8 +1,14 @@
 const admin = require("firebase-admin")
 
-
+/**
+ * Add this to initializeApp() if you want to test on local machine
+ * {
+        credential: admin.credential.cert(
+            './serviceAccountKey.json'
+        ),
+    }
+ */
 admin.initializeApp()
-
 
 const db = admin.firestore();
 const cl_authorization_code = db.collection("authorization_code");
